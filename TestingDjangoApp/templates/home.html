@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+</head>
+
+<body>
+<h1>HOME</h1>
+
+<table>
+    <tr>
+        <th>Name</th>
+        <th>Sound</th>
+      
+    </tr>
+    {% for item in query_results %}
+        <tr> 
+            <td>{{ item.name }}</td>
+            <td>{{ item.sound }}</td>
+        </tr>
+    {% endfor %}
+</table>
+
+</body>
+</html>
+
+
